@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Width=device-Width, initial-scale=1.0">
+        <title>Zil Animasyonu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+        <i class="fa-solid fa-bell zil">
+            <span>7</span>
+        </i>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html,body {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .zil {
+                font-size: 200px;
+                color: rgb(40,0,185);
+                animation: zilCalma 2s infinite;
+                position: relative;
+            }
+                .zil>span {
+                    font-size: 20px;
+                    position: absolute;
+                    top: -50px;
+                    right: 0px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                }
+
+                @keyframes zilCalma {
+                    5% {transform: rotate(20deg);}
+                    10% {transform: rotate(-20deg);}
+                    15% {transform: rotate(20deg);}
+                    20% {transform: rotate(0deg);}
+                }
+            
+        </style>
+    </body>
+</html>
